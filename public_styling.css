@@ -1,7 +1,7 @@
 * { 
         margin: 0px; 
         font-family: 'Poppins', sans-serif;
-                padding: 0px; 
+        padding: 0px; 
 
 }
 .content .content-title{
@@ -11,12 +11,16 @@
     margin-top: 10px;
     width: 50%;
     color: #fff;
-    background-color: #895b4a;
+    background-color: #daccba;
     border-radius: 25px;
+}
+.about-content{
+    margin: auto;
+    width: 50%;
 }
 html { height: 100%; box-sizing: border-box; }
 body {
-        background-color: #9f8c86;
+        background-color: #daccba;
         display: flex;
         flex-wrap: wrap;
         position: relative;
@@ -34,8 +38,8 @@ hr { margin: 10px 0px; opacity: .25; }
 .blog h2{
     text-align: center;
     font-size: 3em;
-}
-.blogform input {
+    }
+    .blogform input {
         width: 80%;
         display: block;
         padding: 13px 13px;
@@ -45,8 +49,8 @@ hr { margin: 10px 0px; opacity: .25; }
         box-sizing : border-box;
         background: transparent;
         border: 1px solid #3E606F;
-}
-.blogform textarea {
+    }
+    .blogform textarea {
         width: 80%;
         height: 20rem;
         display: block;
@@ -59,126 +63,142 @@ hr { margin: 10px 0px; opacity: .25; }
         border: 1px solid #3E606F;
         resize: vertical;
 
-}
-.blogform input:focus {
+    }
+
+    .blogform input:focus {
         outline: none;
-}
-/* BUTTON DEFAULT */
-.btn {
-        color: white;
-        background: #4E6166;
-        text-align: center;
-        border: none;
-        border-radius: 5px;
-        display: block;
-        letter-spacing: .1em;
-        margin: 10px 0px;
-        padding: 13px 20px;
-        text-decoration: none;
-}
-.container {
-        width: 90%;
+    }
+
+    .container {
+        width: 100%;
         margin: 0px auto;
         overflow: hidden;
 
-}
+    }
 /* NAVBAR */
-.navbar {
+    .navbar {
         padding: 10px;
-        margin: auto;
+        margin: 30px;
         overflow: hidden;
-        background-color: #895b4a ;
-        border-radius: 0px 0px 25px 25px;
+        background: #3b2621;
+        box-shadow:  9px 9px 18px #b9ad9e,
+                    -9px -9px 18px #fbebd6;
+        border-radius: 25px;
         z-index: 1000;
 
-}
-.navbar ul {
-    list-style-type: none;
-    float: right;
-    overflow: hidden;
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: auto;
+        float: right;
+        overflow: hidden;
 
-}
-.navbar ul li {
+    }
+    .navbar ul li {
     float: left;
-}
-.navbar ul li a {
+    }
+    .navbar ul li a {
         font-size: 25px;
         display: block;
         color: rgb(239, 231, 231);
         text-align: center;
         padding: 20px 28px;
         text-decoration: none;
-}
-.navbar ul li a:hover {
+        border-radius: 25px;
+
+    }
+    .navbar ul li a:hover {
         margin: auto;
         cursor: pointer;
         color: #fff;
-        background-color: #3b2621;
-}
+        background-color: #895b4a;
+        transition: ease-in-out 0.5s;
+    }
 
-/* LOGO */
-.navbar .logo_div {
+    /* LOGO */
+    .navbar .logo_div {
         float: left; 
         padding-top: 5px;
         padding-left: 40px;
-}
-.navbar .logo_div h1 {
+    }
+    .navbar .logo_div h1 {
         color: #d8f1f8;
         font-size: 3em;
         letter-spacing: 5px;
         font-weight: 100;
-        font-family: "Pacifico", cursive;}
+    }
+    .navbar h1{
+        font-family: 'Poppins', sans-serif;
+    }
 
 /* FOOTER */
-.footer {
+    .footer {
         overflow: hidden;
-position: absolute;  
-right: 0;
-  bottom: 0;
-  left: 0;
-  color: white;
-  background-color: #73707D;
-  text-align: center;
-  width: 80%;
-  margin: 20px auto 0px;
-  padding: 20px 0px;
-  z-index: 1000;
-}
-.form-container {
-        background-color: #daccba;
+        position: inherit;  
+
+        bottom: 0;
+        border-radius: 25px;
+        color: white;
+        background-color: #3b2621;
         text-align: center;
-        position: inherit;
-        margin-top: 25px;
-        width: 27%;
+        width: 98%;
+        margin: 20px;
+        padding: 20px 0px;
+        z-index: 1000;
+    }
+    .form-container {
+        background: #3b2621;
+        box-shadow:  9px 9px 18px #b9ad9e,
+        -9px -9px 18px #fbebd6;
+        text-align: center;
+        width: 29%;
+        margin-right: 30px;
         float: right;        
         z-index: 1;
         border-radius: 25px;
     }
+    .form-container h1{
+        color: #fff;
+        padding: 10px;
+    }
     .editform{
         background-color: #daccba;
-        text-align: center;
+
         position: inherit;
         margin: auto;
-        width:50%;
-        height: 80%;
         border-radius: 25px;
+        padding: 10px;
+    }
+    .editform .modifier{
+        margin: 20px;    
+}
+    .editform-container h1{
+        padding: 10px;
+    }
+    .editform-container{
+        text-align: center;
+        color: #fff;
         padding: 20px;
+        margin: auto;
+        width: 50%;
+        background-color: #3b2621;
+        border-radius: 25px;
+        box-shadow:  9px 9px 18px #b9ad9e,
+        -9px -9px 18px #fbebd6;
     }
 
     .editform input{
-        width: 80%;
-        display: block;
+        width: 90%;
         padding: 13px ;
         font-size: 1em;
-        margin:  20px ;
+        margin:  10px ;
         border-radius: 10px;
         box-sizing : border-box;
         background: transparent;
         border: 1px solid #3E606F;
     }
     .editform textarea{
-        width: 80%;
-        display: block;
+        width: 90%;
         padding: 13px ;
         font-size: 1em;
         margin: 20px  ;
@@ -190,56 +210,95 @@ right: 0;
         border: 1px solid #3E606F;
     }
     .editform .submit{
-        background-color: #895b4a;
+        background-color: #3b2621;
         font-weight: bold;
         color: #fff;
         font-size: 20px;
         cursor: pointer;
+        border-radius: 25px;
     }
-.editcontainer{
+    .submit:hover{
+        background-color: #895b4a;
+        transition: ease-in-out 0.3s;
+    }
+    .editcontainer{
         margin: auto;
         width: 50%;
-}
+    }
     .blog-container {
+        position: relative;
         float: left;
-        width: 70%;
+        width:65%;
         flex: 2;
-        margin: auto;        
+        margin: auto;      
+        margin-left: 30px;  
         padding: 20px;
+        background-color: #3b2621;
+        box-shadow:  9px 9px 18px #b9ad9e,
+        -9px -9px 18px #fbebd6;
+        color: #fff;
+        border-radius: 25px;
         margin-bottom: 5rem; /* Adjust the margin to make room for the footer */
+
+    }
+
+
+    .content-title{
+        text-align: center;
+        padding-bottom: 10px;
 
     }
 
 
     .blog {
         margin-bottom: 20px;
-        background: #895b4a;
+        background: #daccba;
         padding: 40px;
         border-radius: 25px;
-        color: white;
+        color: #3b2621;
+        
     }
     .modify{
         background-color: #3b2621;
         padding: 10px;
         margin: 10px;
+        width: 50%;
         color: #fff;
         cursor: pointer;
         border-radius: 25px;
     }
-    .blog p{
-        margin: 5px;
+    .modify:hover{
+        background-color: #895b4a;
+        transition: ease-in-out 0.3s;
+    }
+    .modifier{
+        background-color: #daccba;
         padding: 10px;
-        font-size: 1em;
+        margin: 20px;
+        cursor: pointer;
+        border-radius: 25px;
+        text-align: center;
+        width: 85%;
+        color: #000;
+        outline: none;
     }
-    .blog .blogcontent{
-        font-size: 20px;
+
+    .modifier:hover{
+        background-color: #895b4a;
+        transition: ease-in-out 0.3s;    
+        color: #fff ;
     }
+    .messages h1{
+        padding: 10px;
+        margin: 10px;
+    }
+
     .comment-form {
         margin: 20px;
         padding: 10px;
-        background-color: #daccba;
-        border-radius: 5px;
-        color: #3b2621;
+        background-color: #3b2621;
+        border-radius: 25px;
+        color: #fff;
     }
     
     .comments {
@@ -249,8 +308,12 @@ right: 0;
     .comment {
         margin-bottom: 10px;
         padding: 10px;
-        background-color: #3b2621;
-        border-radius: 5px;
+        background-color: #895b4a;
+        border-radius: 25px;
+        color: #fff;
+    }
+    .comment p{
+        margin: 10px;
     }
     .commenters{
         background-color: #daccba;
@@ -258,11 +321,17 @@ right: 0;
         padding: 10px;
         flex-wrap: wrap;
         margin: auto;
+        border-radius: 25px;
         
     }
-    .commenters input{
+    .commenters .Cname,.Ccontent{
         margin: auto;
         outline: none;
+        border-radius: 25px;
+    }
+    .Ccontent{
+        resize: both;
+        height: auto;
     }
     .commenters .Cname{
         width: 20%;
@@ -282,4 +351,65 @@ right: 0;
         color: #fff;
         cursor: pointer;
         border-radius: 25px;
+    }
+    .commenters .submit:hover{
+        background-color: #895b4a;
+        transition: ease-in-out 0.3s;
+    }
+    .blogform   {
+        background-color: #daccba;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+
+        width: 90%;
+        border-radius: 25px;
+
+    }
+    .blogform .blogsubmit{
+        background-color: #3b2621;
+        color: #fff;
+        margin-bottom: 20px;
+        border-radius: 25px;
+        width: 50%;
+        cursor: pointer;
+    }
+    .blogform .blogsubmit:hover{
+        background-color: #895b4a;
+        transition: ease-in-out 0.3s;
+    }
+    .messages{
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        background-color: #3b2621;
+        box-shadow:  9px 9px 18px #b9ad9e,
+        -9px -9px 18px #fbebd6;
+        color: #fff;
+        padding: 3rem;
+        border-radius: 25px;
+    }
+    .blog .blogcontent{
+        margin: 10px;
+        padding: 20px;
+        font-size: 25px;
+
+    }
+    .aboutcontainer{
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        background-color: #3b2621;
+        border-radius: 25px;
+        padding: 10px;
+        color: #fff;
+        font-size: 2em;
+    }
+    .aboutcontent{
+        background-color: #daccba;
+        border-radius: 25px;
+        color: #000;
+        margin: 15px;
+        padding: 20px;
     }

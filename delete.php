@@ -1,4 +1,11 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="public_styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
 
+  </head>
+  <body>
+    <div class="messages">
 <?php
 // Connect to the database
 $conn = mysqli_connect('localhost', 'root', '', 'blogs');
@@ -15,10 +22,17 @@ $id = $_GET['id'];
 $sql = "DELETE FROM postsss WHERE id = $id";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Record deleted successfully";
+  echo "<h1>Record deleted successfully</h1>";
+  echo '<a href="index.php" class="modifier">Return</a>';
+
 } else {
-  echo "Error deleting record: " . $conn->error;
+  echo "<h1>Error deleting record: " . $conn->error . "</h1>";
+  echo '<a href="index.php" class="modifier">Return</a>';
+
 }
 
 $conn->close();
 ?>
+</div>
+</body>
+</html>
